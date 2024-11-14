@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CeLishp.Base</id>
+    <version>0.1.7</version>
+    <title>CeLishp</title>
+    <authors>Skye Sprung</authors>
+    <license type="expression">GPL-3.0-or-later</license>
+    <licenseUrl>https://licenses.nuget.org/GPL-3.0-or-later</licenseUrl>
+    <readme>README.md</readme>
+    <description>CeLishp extensible modular scripting language</description>
+    <repository type="git" url="https://github.com/sk-spr/CeLisp" commit="6064cd6630f72b799b339f6f9d3957a6562d9601" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>
