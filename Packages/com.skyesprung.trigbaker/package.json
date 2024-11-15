@@ -1,0 +1,23 @@
+{
+  "name": "com.skyesprung.trigbaker",
+  "version": "0.1.0",
+  "displayName": "Trig Baker",
+  "description": "Bake animations from trigonometric functions",
+  "unity": "2022.3",
+  "unityRelease": "50f1",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "dependencies": {
+    "com.github-glitchenzo.nugetforunity": "4.1.1"
+  },
+  "keywords": [
+    "Animation",
+    "Baking"
+  ],
+  "author": {
+    "name": "Skye Sprung",
+    "email": "skye.sprung@gmail.com",
+    "url": "https://skyesprung.com"
+  }
+}

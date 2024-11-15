@@ -1,0 +1,16 @@
+{
+    "name": "com.skyesprung.TrigBaker.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7fee4208f19b0ff56b79564073c4e974"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

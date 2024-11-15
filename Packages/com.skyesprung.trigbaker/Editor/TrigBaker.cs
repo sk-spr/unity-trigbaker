@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using TrigBaker.BakingLib;
 using UnityEditor;
 using UnityEngine;
@@ -7,12 +8,12 @@ using UnityEngine;
 
 namespace TrigBaker.Editor
 {
-    public class Mathimation : EditorWindow
+    public class TrigBaker : EditorWindow
     {
-        [MenuItem("Window/Mathimation")]
+        [MenuItem("Window/TrigBaker")]
         static void ShowWindow()
         {
-            GetWindow(typeof(Mathimation));
+            GetWindow(typeof(TrigBaker));
         }
         public enum AnimatableProperty
         {
@@ -53,7 +54,6 @@ namespace TrigBaker.Editor
             if (GUILayout.Button("Make curves"))
             {
                 Debug.Log(animation.name);
-                var simObj = new GameObject("sim");
                 var clip = animation;
                 if (!animation.clip.legacy)
                     animation.clip.legacy = true;
@@ -61,7 +61,7 @@ namespace TrigBaker.Editor
                     .BakeAnimation(formula, animation.clip ?? new AnimationClip(), new BakerParams
                     {
                         AnimationDuration = animationLength,
-                        TemporalResolution = animation.clip.frameRate / 8
+                        TemporalResolution = animation.clip.frameRate / 4
                     }, typeof(Transform), targetProp switch
                     {
                         AnimatableProperty.RotationX => "localRotation.x",
@@ -72,7 +72,6 @@ namespace TrigBaker.Editor
                         AnimatableProperty.PositionZ => "localPosition.z",
                         _ => throw new ArgumentOutOfRangeException()
                     });
-                DestroyImmediate(simObj);
             }
 
             //animation = Baker.BakeAnimation(formula, animation, new() { AnimationDuration = animationLength });

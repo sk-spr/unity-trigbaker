@@ -7,6 +7,14 @@
       "dependencies": {},
       "hash": "0d0e4af9c79d63224ae26f1a3e822300b1475da7"
     },
+    "com.skyesprung.trigbaker": {
+      "version": "file:com.skyesprung.trigbaker",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.github-glitchenzo.nugetforunity": "4.1.1"
+      }
+    },
     "com.unity.collab-proxy": {
       "version": "2.5.2",
       "depth": 0,
